@@ -1,14 +1,13 @@
-
+import Logo from './img/logo1.png';
 const Header = () => {
     return (
         <header>
-        <nav class="navbar navbar-dark">
-        <div><a href="#" className="navbar-brand">Inicio</a></div>
-        <div><a href="#" className="navbar-brand">Resultados</a></div>
-        <div><a href="#" className="navbar-brand">Detalhes</a></div>
-
-
+        <nav className="">    
+        <div class="navbar-brand"><a href="/" className="navbar-brand">Inicio</a></div>
         </nav>
+        <img src = { Logo }/>        
+
+
       </header>
     )
 }
