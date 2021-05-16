@@ -14,8 +14,8 @@ function App() {
             <Route path="/" exact component={FindPoint}></Route>
             <Route path="/pontos" component={FindPoint}></Route>
             <Route path="/novo" component={AddPoint}></Route>
-            <Route path="/view-point/:id" component={ViewPoint}></Route>
-            <Route path="/view/:nome" component={ShowPoint}></Route>
+            <Route path="/exibir-ponto/:id" component={ViewPoint}></Route>
+            <Route path="/mostrar-ponto/:nome" component={ShowPoint}></Route>
           </Switch>
         </div>
       </Router>

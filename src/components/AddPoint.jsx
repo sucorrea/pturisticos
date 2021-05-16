@@ -1,6 +1,4 @@
-import { Dropdown } from "react-bootstrap";
 import React, { Component } from "react";
-import { DropdownButton } from "react-bootstrap";
 import PontoTuristicoService from "../services/servicePoint";
 
 class AddPoint extends Component {
@@ -23,7 +21,7 @@ class AddPoint extends Component {
     this.salvar = this.salvar.bind(this);
   }
   estados = {
-    listaArray: [
+    list: [
       "Acre",
       "Alagoas",
       "Amapá",
@@ -100,7 +98,7 @@ class AddPoint extends Component {
             <h3 className="text-center"> Adicionar Novo Ponto Turístico</h3>
             <div className="card-body">
               <form>
-                <div className="form-group">
+                <div className="">
                   <label>Nome</label>
                   <input
                     placeholder="Nome do Ponto Turístico"
@@ -124,7 +122,7 @@ class AddPoint extends Component {
                     onChange={this.changeEstadoHandler}
                   >
                     <option selected>Selecione...</option>
-                    {this.estados.listaArray.map((data) => (
+                    {this.estados.list.map((data) => (
                       <option title={data}>{data}</option>
                     ))}
                   </select>
