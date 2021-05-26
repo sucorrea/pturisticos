@@ -1,34 +1,59 @@
-@import url("http://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 30px auto;
-    overflow: auto;
-    min-width: 600px;
-    border: 1px solid steelblue;
-    padding: 30px;
-    border-radius: 5px;
-    /* background: #0c0c0c98;*/
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.text-center {
-    color: orange;
-    font-weight: bold;
-    font-size: 35px;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .container {
+        max-width: 1000px;
+        margin: 30px auto;
+        overflow: auto;
+        min-width: 600px;
+        padding: 30px;
+        border-radius: 5px;
+        background: #ffff;
+        opacity: 90;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .text-center {
+        color: orange;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    
+    .navbar-brand:hover {
+        font-size: 20px;
+        color: rgba(255, 0, 0, 0.74)
+    }
+    
+    .card-body {
+        font-weight: bold;
+    }
+    
+    .footer {
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .etiqueta {
+        font-size: 20px;
+        color: blue;
+    }
+    
+    @media (min-width: 800px) {
+        html {
+            font-size: 87.5%;
+        }
+    }

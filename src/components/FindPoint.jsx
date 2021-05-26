@@ -44,7 +44,7 @@ class FindPoint extends Component {
               type="button"
               onClick={this.addPoint}
             >
-              Cadastrar Ponto Turistico
+              + Cadastrar Novo Ponto Turistico
             </button>
           </div>
           <h3 className="text-center">Lista de Pontos Cadastrados </h3>
@@ -61,7 +61,7 @@ class FindPoint extends Component {
                 value={this.state.ponto}
               />
               <Form.Text className="text-muted"></Form.Text>
-
+              <br/>
               <button
                 onClick={() => this.viewPontoView(this.state.ponto)}
                 className="btn btn-primary me-md-2"

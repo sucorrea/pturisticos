@@ -22,32 +22,7 @@ class AddPoint extends Component {
   }
   estados = {
     list: [
-      "Acre",
-      "Alagoas",
-      "Amapá",
-      "Amazonas",
-      "Bahia",
-      "Ceará",
-      "Distrito Federal",
-      "Espírito Santo",
-      "Goiás",
-      "Maranhão",
-      "Mato Grosso",
-      "Mato Grosso do Sul",
-      "Minas Gerais",
-      "Pará",
-      "Paraíba",
-      "Paraná",
-      "Pernambuco",
-      "Piauí",
-      "Rio de Janeiro",
-      "Rio Grande do Norte",
-      "Rio Grande do Sul",
-      "Rondônia",
-      "Roraima",
-      "Santa Catarina",
-      "São Paulo",
-      "Sergipe",
+      "Acre", "Alagoas","Amapá","Amazonas", "Bahia","Ceará","Distrito Federal","Espírito Santo","Goiás","Maranhão","Mato Grosso","Mato Grosso do Sul","Minas Gerais", "Pará","Paraíba","Paraná","Pernambuco","Piauí","Rio de Janeiro","Rio Grande do Norte","Rio Grande do Sul","Rondônia","Roraima","Santa Catarina","São Paulo","Sergipe",
       "Tocantins",
     ],
   };
@@ -98,7 +73,7 @@ class AddPoint extends Component {
             <h3 className="text-center"> Adicionar Novo Ponto Turístico</h3>
             <div className="card-body">
               <form>
-                <div className="">
+                <div>
                   <label>Nome</label>
                   <input
                     placeholder="Nome do Ponto Turístico"
@@ -108,13 +83,13 @@ class AddPoint extends Component {
                     onChange={this.changeNameHandler}
                   />
                 </div>
-                <div>
-                  <h6>
-                    <b>Localização</b>
-                  </h6>
-                </div>
+             
 
                 <div className="p-0">
+                  <h6>
+                    <br/>
+                    <b>Localização</b>
+                  </h6>
                   <label>Estado</label>
                   <select
                     className="form-select" id="inputGroupSelect01"
@@ -150,6 +125,7 @@ class AddPoint extends Component {
                 <div>
                   <label for="detalhes">Descrição</label>
                   <textarea
+                  placeholder="Descrição do Ponto Turístico"
                     class="form-control"
                     id="detalhes"
                     rows="3"

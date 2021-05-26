@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PONTOS_API_BASE_URL = "http://localhost:5000/pturisticos";
+const PONTOS_API_BASE_URL = "http://localhost:5000/pturistico";
 class servicePoint {
 
     getPontosSemfiltro(_filtro) {

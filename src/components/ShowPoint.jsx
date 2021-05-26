@@ -37,8 +37,7 @@ class ShowPoint extends Component {
                   <td>
                     <button
                       onClick={() => this.viewPonto(ponto.id)}
-                      className="btn btn-info"
-                    >
+                      className="btn btn-info">
                       Detalhes
                     </button>
                   </td>
