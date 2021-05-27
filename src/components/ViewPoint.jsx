@@ -25,28 +25,26 @@ class ViewPoint extends Component {
           <h3 className="text-center">Detalhes do Ponto Turistico</h3>
           <div className="card-body">
             <div className="form-group">
-              <center>
-                <label className="etiqueta">Nome: </label>
+                <label className="labelview">Nome: </label>
                 <div>{this.state.ponto.nome}</div>
 
-                <label className="etiqueta">Cidade: </label>
+                <label className="labelview">Cidade: </label>
                 <div>{this.state.ponto.cidade}</div>
 
-                <label className="etiqueta">Estado: </label>
+                <label className="labelview">Estado:</label>
                 <div>{this.state.ponto.estado}</div>
 
-                <label className="etiqueta">Referencia: </label>
+                <label className="labelview">Referencia: </label>
                 <div>{this.state.ponto.referencia}</div>
 
-                <label className="etiqueta">Descrição: </label>
+                <label className="labelview">Descrição: </label>
                 <div>{this.state.ponto.descricao}</div>
-              </center>
             </div>
+            <br/>
             <button
               className="btn btn-danger"
               onClick={this.cancel.bind(this)}
-              style={{ marginLeft: "10px" }}
-            >
+              style={{ marginLeft: "10px" }}>
               Voltar
             </button>
           </div>
