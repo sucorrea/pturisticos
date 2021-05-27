@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ServicePoint from "../services/servicePoint";
-import { ListGroup, Form, Button, Table, state } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 
 class ShowPoint extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class ShowPoint extends Component {
           <Table responsive>
             <tbody>
               {this.state.pontos.map((ponto) => (
-                <tr>
+                <tr key={ponto._id}>
                   <td>{ponto.nome}</td>
                   <td>{ponto.estado}</td>
                   <td>{ponto.cidade}</td>
@@ -36,7 +36,7 @@ class ShowPoint extends Component {
                   <td>{ponto.descricao}</td>
                   <td>
                     <button
-                      onClick={() => this.viewPonto(ponto.id)}
+                      onClick={() => this.viewPonto(ponto._id)}
                       className="btn btn-info">
                       Detalhes
                     </button>

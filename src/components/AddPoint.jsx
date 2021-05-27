@@ -126,7 +126,7 @@ class AddPoint extends Component {
                   <label for="detalhes">Descrição</label>
                   <textarea
                   placeholder="Descrição do Ponto Turístico"
-                    class="form-control"
+                    className="form-control"
                     id="detalhes"
                     rows="3"
                     value={this.state.descricao}

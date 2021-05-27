@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const PONTOS_API_BASE_URL = "http://localhost:5000/pturistico";
+const PONTOS_API_BASE_URL = "http://localhost:5000/api/pontosTuristicos";
 class servicePoint {
 
     getPontosSemfiltro(_filtro) {
@@ -11,7 +11,9 @@ class servicePoint {
     }
     salvar(ponto) {
         return axios.post(PONTOS_API_BASE_URL, ponto);
-
+    }
+    getPontosID(id) {
+        return axios.get(PONTOS_API_BASE_URL + "/" + id);
     }
 
 }

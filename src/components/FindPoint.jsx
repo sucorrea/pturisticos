@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ListGroup, Form, Button, Table, state } from "react-bootstrap";
+import { Form, Table } from "react-bootstrap";
 import ServicePoint from "../services/servicePoint";
 
 class FindPoint extends Component {
@@ -38,7 +38,7 @@ class FindPoint extends Component {
         <p />
 
         <div className="">
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <div className="d-grid gap-2 d-md-flex justify-content-md-end">
             <button
               className="btn btn-primary me-md-2"
               type="button"
@@ -61,7 +61,7 @@ class FindPoint extends Component {
                 value={this.state.ponto}
               />
               <Form.Text className="text-muted"></Form.Text>
-              <br/>
+              <br />
               <button
                 onClick={() => this.viewPontoView(this.state.ponto)}
                 className="btn btn-primary me-md-2"
